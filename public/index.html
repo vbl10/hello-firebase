@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Firebase 🔥</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.10.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.10.0/firebase-auth-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/10.10.0/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/10.10.0/firebase-analytics-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Hello Firebase 🔥</h1>
+      <div id="login-form">
+        <input type="text" id="email" placeholder="e-mail" />
+        <input type="password" id="password" placeholder="senha" />
+        <button onclick="onBtnSignIn()">Entrar</button>
+        <button onclick="onBtnSignUp()">Criar</button>
+      </div>
+      <div class="user-panel" id="user-panel" hidden="hidden"></div>
+    </div>  
+  </body>
+</html>

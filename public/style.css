@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.content {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+.user-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ul {
+  list-style: none;
+}
+.list-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+button {
+  padding: 5px;
+}
+
+input {
+  padding: 5px;
+}
